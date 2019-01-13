@@ -49,7 +49,7 @@ class NALU(nn.Module):
         m = torch.exp(nn.functional.linear(torch.log(torch.abs(x) + self.e), self.W, self.Wbias))
         out = g*a + (1-g)*m
         return out
-``
+```
 
 
 ## Loss of models
